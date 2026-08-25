@@ -82,6 +82,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Mobile Accordion Dropdowns logic
+  const mobileAccordions = document.querySelectorAll('.mobile-accordion');
+  mobileAccordions.forEach(acc => {
+    const toggleBtn = acc.querySelector('.mobile-accordion-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = acc.classList.contains('open');
+
+        // Close other open accordions for clean UX
+        mobileAccordions.forEach(other => {
+          if (other !== acc) {
+            other.classList.remove('open');
+            const otherBtn = other.querySelector('.mobile-accordion-toggle');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        if (isOpen) {
+          acc.classList.remove('open');
+          toggleBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          acc.classList.add('open');
+          toggleBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  });
+
   // Desktop Dropdown link clicks close on select
   const dropdownMenuLinks = document.querySelectorAll('.dropdown-menu a');
   dropdownMenuLinks.forEach(link => {
