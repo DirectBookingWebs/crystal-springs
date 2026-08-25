@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crystal Springs B&B is a charming, family-run 3-Star Bed & Breakfast on the banks of the River Flesk in Killarney, Co. Kerry, Ireland. Ideally located minutes from Killarney town centre and National Park.">
+  <meta name="keywords" content="Crystal Springs B&B, Killarney Bed and Breakfast, Killarney Accommodation, Kerry B&B, River Flesk, Ring of Kerry, Muckross House, Brosnan Family">
+  <title>Crystal Springs B&B | 3-Star Family Bed & Breakfast in Killarney, Kerry</title>
+
+  <!-- Google Fonts: Elegant serif for headings, clean sans-serif for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Flatpickr Datepicker CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <!-- BRAND LOGO -->
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Crystal Springs Bed &amp; Breakfast" class="header-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links">
+        <a href="#about">About</a>
+
+        <!-- Dropdown 1: Rooms & Offers -->
+        <div class="nav-dropdown">
+          <a href="#rooms" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <span>Rooms &amp; Offers</span>
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#rooms">Rooms &amp; Suites</a>
+            <a href="#offers">Special Offers</a>
+            <a href="#amenities">Property Amenities</a>
+          </div>
+        </div>
+
+        <a href="#breakfast">Breakfast</a>
+        <a href="#gallery">Gallery</a>
+
+        <!-- Dropdown 2: Explore & Location -->
+        <div class="nav-dropdown">
+          <a href="#killarney" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <span>Explore &amp; Location</span>
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#killarney">Things to Do in Killarney</a>
+            <a href="#location">Location &amp; Directions</a>
+          </div>
+        </div>
+
+        <a href="#booking">Contact</a>
+      </nav>
+
+      <!-- Desktop Book Direct CTA -->
+      <div class="header-cta">
+        <a href="#booking" class="btn btn-outline header-book-btn">Book Direct</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE NAVIGATION OVERLAY (SLIDE-OUT)
+       ========================================================================== -->
+  <div class="mobile-nav-overlay" id="mobileNav" aria-hidden="true">
+    <!-- Close Button -->
+    <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close navigation">&times;</button>
+
+    <div class="mobile-logo-wrap" style="margin-top: 10px; margin-bottom: 24px; text-align: center;">
+      <img src="images/logo.png" alt="Crystal Springs B&B" class="header-logo-img" style="height: 48px; filter: brightness(0.15) contrast(1.1);">
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="#about">About Us</a>
+      <a href="#rooms">Rooms &amp; Suites</a>
+      <a href="#offers">Special Offers</a>
+      <a href="#breakfast">Breakfast Menu</a>
+      <a href="#amenities">Property Amenities</a>
+      <a href="#gallery">Photo Gallery</a>
+      <a href="#killarney">Explore Killarney</a>
+      <a href="#location">Location &amp; Directions</a>
+      <a href="#booking">Contact &amp; Book</a>
+    </nav>
+
+    <a href="#booking" class="btn btn-primary" style="width: 100%; max-width: 260px; text-align: center; margin-top: 8px;">Book Direct</a>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION & INTEGRATED BOOKING BAR
+       ========================================================================== -->
+  <section class="hero">
+    <!-- Hero Background Image -->
+    <div class="hero-bg">
+      <img src="images/hero-bg.webp" alt="Crystal Springs B&B Riverside Grounds in Killarney">
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <span class="hero-subtitle">Family-Run 3-Star Bed &amp; Breakfast &bull; Killarney, Co. Kerry</span>
+      <h1 class="hero-title">Riverside Tranquility on the Banks of the River Flesk</h1>
+      <p class="hero-tagline">Enjoy warm Irish hospitality from the Brosnan family, award-winning homemade breakfasts, and peaceful countryside scenery — just 1 km from Killarney town centre.</p>
+
+      <!-- Direct Booking Perks Strip -->
+      <div class="hero-perks-strip">
+        <div class="hero-perk-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Best Direct Rate Guaranteed</span>
+        </div>
+        <div class="hero-perk-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Gourmet Full Breakfast Included</span>
+        </div>
+        <div class="hero-perk-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Free Private Parking &amp; Wi-Fi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Integrated Booking Bar -->
+    <div class="booking-bar-wrapper container">
+      <form class="booking-bar" name="hero-booking" method="POST" data-netlify="true">
+        <!-- Netlify identification hidden input -->
+        <input type="hidden" name="form-name" value="hero-booking">
+
+        <!-- Check-in Date -->
+        <div class="form-group">
+          <label for="hero_check_in">Check-In</label>
+          <div class="input-with-icon">
+            <input type="text" id="hero_check_in" name="check_in_date" placeholder="Select Date" required>
+            <!-- Calendar Icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+        </div>
+
+        <!-- Check-out Date -->
+        <div class="form-group">
+          <label for="hero_check_out">Check-Out</label>
+          <div class="input-with-icon">
+            <input type="text" id="hero_check_out" name="check_out_date" placeholder="Select Date" required>
+            <!-- Calendar Icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+        </div>
+
+        <!-- Room Preference selection -->
+        <div class="form-group">
+          <label for="hero_room_pref">Room Preference</label>
+          <div class="input-with-icon">
+            <select id="hero_room_pref" name="room_preference">
+              <option value="any">Any Available Room</option>
+              <option value="superior_king">Superior King Room (River View)</option>
+              <option value="deluxe_double">Deluxe Double / Twin Room</option>
+              <option value="family_suite">Family / Triple Suite</option>
+              <option value="special_offer_3night">3-Night Explorer Package</option>
+              <option value="special_offer_2night">2-Night Summer Break</option>
+            </select>
+            <!-- Bed Icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h20M22 4v16M2 18h20M10 8v10M14 8v10"></path></svg>
+          </div>
+        </div>
+
+        <!-- Guests selection -->
+        <div class="form-group">
+          <label for="hero_guests">Guests</label>
+          <div class="input-with-icon">
+            <select id="hero_guests" name="guest_count" required>
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5+">5+ Guests (Family)</option>
+            </select>
+            <!-- User Icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+        </div>
+
+        <!-- Search button -->
+        <button type="submit" class="btn btn-primary">Check Availability</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTRODUCTION / ABOUT SECTION
+       ========================================================================== -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Text Content -->
+        <div class="about-content">
+          <span class="section-subtitle">Welcome to Crystal Springs</span>
+          <h2 class="section-title" style="margin-bottom: 24px;">The best of both worlds: riverside tranquility, minutes from town.</h2>
+          <p class="about-lead">Nestled along the picturesque banks of the River Flesk, Crystal Springs offers an idyllic retreat where natural serenity meets warm Irish hospitality.</p>
+          <p class="about-text">Crystal Springs Bed and Breakfast is proudly owned and operated by the Brosnan Family, who ensure the comfort and enjoyment of every guest by providing top-quality, spacious en-suite rooms and genuine local care.</p>
+          <p class="about-text">Located in a peaceful country setting just 1 km from Killarney town centre, our property is the premier launchpad for touring the world-famous Ring of Kerry, Dingle Peninsula, and Killarney National Park (Muckross House, Ross Castle, and the Gap of Dunloe). Relax to the soothing sights and sounds of the River Flesk, stroll through our private guest gardens, or enjoy salmon and trout angling directly on location.</p>
+          <span class="about-signature">The Brosnan Family, Your Hosts</span>
+        </div>
+
+        <!-- Image Wrapper -->
+        <div class="about-image">
+          <img src="images/about.webp" alt="Welcoming guest lounge and atmosphere at Crystal Springs B&B">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ROOMS & ACCOMMODATION
+       ========================================================================== -->
+  <section id="rooms" class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Accommodation</span>
+        <h2 class="section-title">Comfortable Rooms &amp; Suites</h2>
+        <p style="margin-top: 14px;">All bedrooms feature private en-suite facilities, premium bedding, silent mini fridges, flat-screen TVs, high-speed Wi-Fi, and tea/coffee stations.</p>
+      </div>
+
+      <!-- Room Cards Grid -->
+      <div class="rooms-grid">
+
+        <!-- ROOM 1: SUPERIOR KING ROOM -->
+        <div class="room-card">
+          <div class="room-image-wrapper">
+            <img src="images/room-1.webp" alt="Superior King Room with River View at Crystal Springs B&B">
+            <span class="room-price-badge">From €165 / Night</span>
+          </div>
+          <div class="room-content">
+            <h3 class="room-title">Superior King Room</h3>
+            <p class="room-description">An expansive, tranquil bedroom featuring an extra-large King bed, private en-suite bathroom with power shower, scenic river/garden views, and complimentary chocolates &amp; treats.</p>
+
+            <!-- Key Features Icons -->
+            <div class="room-features">
+              <div class="room-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                <span>Free WiFi</span>
+              </div>
+              <div class="room-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h20M22 4v16M2 18h20M10 8v10M14 8v10"></path></svg>
+                <span>King Bed</span>
+              </div>
+              <div class="room-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                <span>River View</span>
+              </div>
+            </div>
+
+            <!-- CTA: Links to inquiry and auto-selects Room type -->
+            <a href="#booking" class="btn btn-secondary room-booking-cta" data-room-type="superior_king">Book Superior King</a>
+          </div>
+        </div>
+
+        <!-- ROOM 2: DELUXE DOUBLE / TWIN ROOM -->
+        <div class="room-card">
+          <div class="room-image-wrapper">
+            <img src="images/room-2.webp" alt="Deluxe Double Room at Crystal Springs B&B">
+            <span class="room-price-badge">From €145 / Night</span>
+          </div>
+          <div class="room-content">
+            <h3 class="room-title">Deluxe Double / Twin</h3>
+            <p class="room-description">Elegantly appointed room overlooking our private gardens. Features a plush double or twin bedding setup, sparkling en-suite bathroom, mini fridge, and quiet atmosphere for deep rest.</p>
+
+            <!-- Key Features Icons -->
+            <div class="room-features">
+              <div class="room-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                <span>Free WiFi</span>
+              </div>
+              <div class="room-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h20M22 4v16M2 18h20M10 8v10M14 8v10"></path></svg>
+                <span>Double / Twin</span>
+              </div>
+              <div class="room-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                <span>Garden View</span>
+              </div>
+            </div>
+
+            <!-- CTA: Links to inquiry and auto-selects Room type -->
+            <a href="#booking" class="btn btn-secondary room-booking-cta" data-room-type="deluxe_double">Book Deluxe Room</a>
+          </div>
+        </div>
+
+        <!-- ROOM 3: SPACIOUS FAMILY / TRIPLE SUITE -->
+        <div class="room-card">
+          <div class="room-image-wrapper">
+            <img src="images/room-3.webp" alt="Family Suite at Crystal Springs B&B">
+            <span class="room-price-badge">From €195 / Night</span>
+          </div>
+          <div class="room-content">
+            <h3 class="room-title">Family &amp; Triple Suite</h3>
+            <p class="room-description">Spacious and flexible accommodation tailored for families or groups touring County Kerry. Includes multiple beds, modern en-suite, mini fridge, and cots/highchairs on request.</p>
+
+            <!-- Key Features Icons -->
+            <div class="room-features">
+              <div class="room-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                <span>Free WiFi</span>
+              </div>
+              <div class="room-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span>Up to 4 Guests</span>
+              </div>
+              <div class="room-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <span>Cots Available</span>
+              </div>
+            </div>
+
+            <!-- CTA: Links to inquiry and auto-selects Room type -->
+            <a href="#booking" class="btn btn-secondary room-booking-cta" data-room-type="family_suite">Book Family Suite</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SPECIAL OFFERS & PACKAGES
+       ========================================================================== -->
+  <section id="offers" class="section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Exclusive Value</span>
+        <h2 class="section-title">Special Stay Packages</h2>
+        <p style="margin-top: 14px;">Book direct with Crystal Springs to unlock our best package rates with full breakfast and special perks included.</p>
+      </div>
+
+      <div class="offers-grid">
+        <!-- OFFER 1: 3-NIGHT EXPLORER PACKAGE -->
+        <div class="offer-card featured">
+          <div class="offer-header">
+            <span class="offer-nights-badge">3 Nights Package</span>
+            <h3 class="offer-title">3-Night Killarney Explorer Break</h3>
+          </div>
+          <p class="offer-details">Enjoy a relaxing 3-night stay in our Superior King Size Double Room with our complete cooked-to-order Full Breakfast menu and morning buffet each day.</p>
+
+          <div class="offer-price-wrap">
+            <span class="offer-price">From €530</span>
+            <span class="offer-price-sub">/ for 3 nights total</span>
+          </div>
+
+          <div class="offer-includes">
+            <div class="offer-includes-title">Package Inclusions:</div>
+            <ul class="offer-includes-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>3 nights in Superior King Room with river/garden views</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full daily gourmet breakfast menu &amp; buffet included</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complimentary tea, coffee, snacks &amp; chocolates in room</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Free safe off-street parking &amp; high-speed Wi-Fi</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#booking" class="btn btn-primary room-booking-cta" data-room-type="special_offer_3night">Reserve 3-Night Package</a>
+        </div>
+
+        <!-- OFFER 2: 2-NIGHT SUMMER RELAXATION -->
+        <div class="offer-card">
+          <div class="offer-header">
+            <span class="offer-nights-badge">2 Nights Package</span>
+            <h3 class="offer-title">2-Night Riverside Summer Break</h3>
+          </div>
+          <p class="offer-details">Indulge in 2 peaceful nights in a Superior King Double Room with an extra-large King bed, private en-suite, and delicious breakfast served overlooking the River Flesk.</p>
+
+          <div class="offer-price-wrap">
+            <span class="offer-price">From €363</span>
+            <span class="offer-price-sub">/ for 2 nights total</span>
+          </div>
+
+          <div class="offer-includes">
+            <div class="offer-includes-title">Package Inclusions:</div>
+            <ul class="offer-includes-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>2 nights in Superior King Room with private bathroom</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full Irish breakfast or Smoked Salmon options included</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complimentary hot beverage station and welcome chocolates</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Free on-site car parking throughout your stay</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#booking" class="btn btn-secondary room-booking-cta" data-room-type="special_offer_2night">Reserve 2-Night Package</a>
+        </div>
+      </div>
+
+      <!-- Direct Booking Perks Guarantee Banner -->
+      <div class="direct-booking-banner">
+        <div>
+          <h3 style="font-size: 20px; font-family: var(--font-serif); margin-bottom: 6px;">Why Book Directly With Crystal Springs?</h3>
+          <p style="font-size: 13.5px; color: rgba(255,255,255,0.75);">Skip third-party commission fees and enjoy exclusive benefits reserved only for direct guests.</p>
+        </div>
+        <div class="direct-perks-list">
+          <div class="direct-perk">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span>Best Rate Guaranteed</span>
+          </div>
+          <div class="direct-perk">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            <span>Flexible Scheduling</span>
+          </div>
+          <div class="direct-perk">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>Direct Host Assistance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BREAKFAST MENU SHOWCASE SECTION
+       ========================================================================== -->
+  <section id="breakfast" class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Freshly Made Each Morning</span>
+        <h2 class="section-title">Our Renowned Breakfast Menu</h2>
+        <p style="margin-top: 14px;">Served in our bright, scenic dining room overlooking the River Flesk. Relax and savor the sight of the water while starting your day with the finest Kerry ingredients.</p>
+      </div>
+
+      <!-- Breakfast Hero Banner with Photos -->
+      <div class="breakfast-hero-banner">
+        <div>
+          <span class="section-subtitle">The Riverview Dining Room</span>
+          <h3 style="font-size: 30px; margin-bottom: 16px;">Wake Up to a Truly Delicious Irish Morning</h3>
+          <p style="font-size: 15px; line-height: 1.7; margin-bottom: 20px;">Every morning at Crystal Springs is a culinary treat. Guests are welcomed to an extensive buffet table loaded with fresh fruit salad, fruit juices, artisan yoghurts, cereals, and freshly baked Irish breads — followed by your choice of hot, freshly cooked dishes prepared to order by your hosts.</p>
+          <div style="display: flex; gap: 16px; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; color: var(--primary-color);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Served Daily 8:00 AM – 10:00 AM</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; color: var(--text-secondary);">
+              <span>&bull; Vegetarian &amp; Dietary Options Available</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="breakfast-images-cluster">
+          <div class="breakfast-img-wrap featured-img">
+            <img src="images/breakfast-room.webp" alt="Bright breakfast room overlooking the River Flesk at Crystal Springs B&B">
+          </div>
+          <div class="breakfast-img-wrap">
+            <img src="images/breakfast-1.webp" alt="Fresh traditional cooked Irish breakfast">
+          </div>
+          <div class="breakfast-img-wrap">
+            <img src="images/breakfast-2.webp" alt="Fresh morning fruit, pastries and cereal buffet">
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Categories Grid -->
+      <div class="menu-sections-grid">
+
+        <!-- CATEGORY 1: SIGNATURE SPECIALITIES -->
+        <div class="menu-category-card">
+          <div class="menu-category-header">
+            <div class="menu-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3 class="menu-category-title">House Specialities</h3>
+          </div>
+          <div class="menu-items-list">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Bailey’s Cream Hot Oatmeal Porridge</span>
+                <span class="menu-item-tag">Guest Favourite</span>
+              </div>
+              <p class="menu-item-desc">Creamy Irish oatmeal porridge served piping hot, drizzled with authentic Bailey’s Irish Cream Liqueur and unrefined brown sugar.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Oak-Smoked Salmon with Scrambled Eggs</span>
+                <span class="menu-item-tag">Chef’s Choice</span>
+              </div>
+              <p class="menu-item-desc">Delicate Irish oak-smoked Atlantic salmon paired with light, fluffy free-range scrambled eggs on toasted homemade brown soda bread.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">French-Style Sweet Crepes</span>
+                <span class="menu-item-tag">Sweet Treat</span>
+              </div>
+              <p class="menu-item-desc">Delicate thin French-style pancakes served with zesty warm lemon syrup and a medley of fresh seasonal fruits.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 2: TRADITIONAL COOKED TO ORDER -->
+        <div class="menu-category-card">
+          <div class="menu-category-header">
+            <div class="menu-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+            </div>
+            <h3 class="menu-category-title">Traditional Hot Breakfast</h3>
+          </div>
+          <div class="menu-items-list">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Traditional Full Irish Breakfast</span>
+                <span class="menu-item-tag">Classic</span>
+              </div>
+              <p class="menu-item-desc">Grilled Irish prime bacon, farm-fresh eggs (fried or scrambled), butcher's pork sausages, and traditional black &amp; white pudding.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Bacon or Ham &amp; Free-Range Eggs</span>
+                <span class="menu-item-tag">Cooked to Order</span>
+              </div>
+              <p class="menu-item-desc">Farm eggs cooked scrambled or fried, accompanied by Irish ham or crispy bacon, optionally topped with melted Kerry cheddar cheese.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Fresh Fruit Plate with Yoghurt &amp; Cheeses</span>
+                <span class="menu-item-tag">Fresh &amp; Light</span>
+              </div>
+              <p class="menu-item-desc">Platter of sliced fresh seasonal fruit, natural creamy yoghurt, and selected Irish farmhouse cheeses.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 3: BUFFET BAR -->
+        <div class="menu-category-card">
+          <div class="menu-category-header">
+            <div class="menu-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <h3 class="menu-category-title">The Morning Buffet Table</h3>
+          </div>
+          <div class="menu-items-list">
+            <div class="menu-item">
+              <span class="menu-item-name">Fresh Fruit Salad &amp; Berry Medley</span>
+              <p class="menu-item-desc">Chilled hand-cut seasonal fruits and berries prepared fresh every morning.</p>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item-name">Artisan Breads &amp; Preserves</span>
+              <p class="menu-item-desc">Traditional Irish brown soda bread, white loaf, toast, and gourmet fruit jams &amp; marmalades.</p>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item-name">Cereals, Granola &amp; Pure Fruit Juices</span>
+              <p class="menu-item-desc">Selection of breakfast cereals, crunchy muesli, chilled orange juice, apple juice, and milk.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 4: BEVERAGES -->
+        <div class="menu-category-card">
+          <div class="menu-category-header">
+            <div class="menu-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" y1="2" x2="6" y2="4"></line><line x1="10" y1="2" x2="10" y2="4"></line><line x1="14" y1="2" x2="14" y2="4"></line></svg>
+            </div>
+            <h3 class="menu-category-title">Hot &amp; Cold Beverages</h3>
+          </div>
+          <div class="menu-items-list">
+            <div class="menu-item">
+              <span class="menu-item-name">Freshly Brewed Coffee</span>
+              <p class="menu-item-desc">Rich roasted filter coffee served piping hot with fresh cream or chilled milk.</p>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item-name">Traditional Irish Tea &amp; Herbal Infusions</span>
+              <p class="menu-item-desc">Classic Irish breakfast tea, Earl Grey, peppermint, chamomile, and green tea varieties.</p>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item-name">Hot Chocolate &amp; Chilled Kerry Milk</span>
+              <p class="menu-item-desc">Rich hot cocoa for all ages, plus fresh local whole milk and plant-based alternatives.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AMENITIES SECTION
+       ========================================================================== -->
+  <section id="amenities" class="section-padding">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Comfort &amp; Convenience</span>
+        <h2 class="section-title">Property &amp; Guest Amenities</h2>
+        <p style="margin-top: 14px;">Everything you need for a restorative, hassle-free holiday in Killarney.</p>
+      </div>
+
+      <!-- Amenities Grid -->
+      <div class="amenities-grid">
+
+        <!-- AMENITY 1: RIVER ANGLING -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3 class="amenity-title">River Fishing on Location</h3>
+          <p class="amenity-desc">Direct fishing access on the peaceful River Flesk right from our private riverside grounds.</p>
+        </div>
+
+        <!-- AMENITY 2: FREE WI-FI -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+          </div>
+          <h3 class="amenity-title">High-Speed Free Wi-Fi</h3>
+          <p class="amenity-desc">Fast, complimentary Wi-Fi throughout the entire property, bedrooms, and guest lounges.</p>
+        </div>
+
+        <!-- AMENITY 3: FREE PARKING -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <h3 class="amenity-title">Ample Safe Parking</h3>
+          <p class="amenity-desc">Spacious, secure private off-street parking for cars, touring vans, and motorbikes.</p>
+        </div>
+
+        <!-- AMENITY 4: PRIVATE GARDENS -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-9-7-9s-7 4.7-7 9a7 7 0 0 0 7 7z"></path></svg>
+          </div>
+          <h3 class="amenity-title">Guest Gardens</h3>
+          <p class="amenity-desc">Landscaped riverside gardens with outdoor seating to unwind by the flowing River Flesk.</p>
+        </div>
+
+        <!-- AMENITY 5: EN-SUITE BATHROOMS -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-2.12 0l-.88.88a1.5 1.5 0 0 0 0 2.12L6 9"></path><path d="m14 11 3.5-3.5a1.5 1.5 0 0 1 2.12 0l.88.88a1.5 1.5 0 0 1 0 2.12L17 14"></path><path d="m4 20 10-10"></path></svg>
+          </div>
+          <h3 class="amenity-title">En-Suite Bath &amp; Shower</h3>
+          <p class="amenity-desc">All rooms include private en-suite bathrooms equipped with power showers and toiletries.</p>
+        </div>
+
+        <!-- AMENITY 6: MINI FRIDGES & REFRESHMENTS -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="4" y1="10" x2="20" y2="10"></line><line x1="8" y1="6" x2="8" y2="7"></line><line x1="8" y1="14" x2="8" y2="16"></line></svg>
+          </div>
+          <h3 class="amenity-title">Mini Fridges &amp; Tea / Coffee</h3>
+          <p class="amenity-desc">In-room mini fridges, electric kettle, selection of teas, coffee, snacks and fresh milk.</p>
+        </div>
+
+        <!-- AMENITY 7: BICYCLE HIRE -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"></circle><circle cx="18.5" cy="17.5" r="3.5"></circle><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5L9 6H5m7 11.5 3-7h3.5"></path></svg>
+          </div>
+          <h3 class="amenity-title">Bicycle Hire on Site</h3>
+          <p class="amenity-desc">Rent quality bicycles directly from us to cycle Killarney National Park and lake trails.</p>
+        </div>
+
+        <!-- AMENITY 8: FAMILY AMENITIES -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="amenity-title">Family Friendly</h3>
+          <p class="amenity-desc">Cots and highchairs available for toddlers, babysitting service on request, and children's meals.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GALLERY SECTION (3D COVER FLOW)
+       ========================================================================== -->
+  <section id="gallery" class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Visual Experience</span>
+        <h2 class="section-title">Moments at Crystal Springs</h2>
+        <p style="margin-top: 14px;">Swipe or click to view our property, rooms, riverside gardens, and dining room.</p>
+      </div>
+
+      <!-- 3D Carousel Gallery Container -->
+      <div class="carousel-container">
+        <!-- Previous Arrow Button -->
+        <button class="carousel-prev" id="prevSlideBtn" aria-label="Previous image">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <!-- 3D Sliding Track -->
+        <div class="carousel-track">
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <img src="images/hero-bg.webp" alt="Crystal Springs Riverside Grounds">
+            <div class="carousel-overlay">
+              <span class="carousel-caption">Riverside Grounds &amp; Garden</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <img src="images/about.webp" alt="Welcoming Lounge at Crystal Springs">
+            <div class="carousel-overlay">
+              <span class="carousel-caption">Welcoming Guest Lounge</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 (Active Center) -->
+          <div class="carousel-slide active">
+            <img src="images/breakfast-room.webp" alt="Riverview Breakfast Dining Room">
+            <div class="carousel-overlay">
+              <span class="carousel-caption">Breakfast Room Overlooking River Flesk</span>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-slide">
+            <img src="images/room-1.webp" alt="Superior King Room">
+            <div class="carousel-overlay">
+              <span class="carousel-caption">Superior King Size Bedroom</span>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="carousel-slide">
+            <img src="images/breakfast-1.webp" alt="Traditional Irish Breakfast">
+            <div class="carousel-overlay">
+              <span class="carousel-caption">Traditional Cooked Full Irish Breakfast</span>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="carousel-slide">
+            <img src="images/room-2.webp" alt="Deluxe Double Room">
+            <div class="carousel-overlay">
+              <span class="carousel-caption">Deluxe Double Guest Room</span>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="carousel-slide">
+            <img src="images/bathroom-1.webp" alt="En-suite Bathroom">
+            <div class="carousel-overlay">
+              <span class="carousel-caption">Sparkling Clean En-Suite Shower</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Arrow Button -->
+        <button class="carousel-next" id="nextSlideBtn" aria-label="Next image">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXPLORE KILLARNEY / THINGS TO DO
+       ========================================================================== -->
+  <section id="killarney" class="section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Local Area &amp; Attractions</span>
+        <h2 class="section-title">Lots to See &amp; Do in Killarney</h2>
+        <p style="margin-top: 14px;">Renowned for its majestic mountains, historic castles, and serene lakes, Killarney has endless activities for couples, families, and outdoor enthusiasts.</p>
+      </div>
+
+      <div class="guide-grid">
+
+        <!-- ITEM 1: NATIONAL PARK & LAKES -->
+        <div class="attraction-card">
+          <div class="attraction-content">
+            <div class="attraction-meta">
+              <span class="attraction-distance">1.5 km away</span>
+              <span style="font-size: 12px; color: var(--text-secondary);">Nature &amp; Lakes</span>
+            </div>
+            <h3 class="attraction-title">Killarney National Park &amp; Lakes</h3>
+            <p class="attraction-desc">Over 26,000 acres of ancient oak woods, wild red deer herds, and breathtaking boat cruises across Lough Leane, Muckross Lake, and Upper Lake.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 2: MUCKROSS HOUSE & ABBEY -->
+        <div class="attraction-card">
+          <div class="attraction-content">
+            <div class="attraction-meta">
+              <span class="attraction-distance">3.5 km away</span>
+              <span style="font-size: 12px; color: var(--text-secondary);">Heritage &amp; History</span>
+            </div>
+            <h3 class="attraction-title">Muckross House, Gardens &amp; Traditional Farms</h3>
+            <p class="attraction-desc">Tour the historic 19th-century Victorian mansion, wander the world-famous rhododendron gardens, and experience traditional 1930s Irish farming life.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 3: ROSS CASTLE & JAUNTING CARS -->
+        <div class="attraction-card">
+          <div class="attraction-content">
+            <div class="attraction-meta">
+              <span class="attraction-distance">3.0 km away</span>
+              <span style="font-size: 12px; color: var(--text-secondary);">15th Century Castle</span>
+            </div>
+            <h3 class="attraction-title">Ross Castle &amp; Traditional Jarvey Carts</h3>
+            <p class="attraction-desc">Recently restored 15th-century stronghold on the shores of Lough Leane. Take a scenic ride in a traditional horse-drawn Jaunting Car through the park.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 4: GAP OF DUNLOE & TORC WATERFALL -->
+        <div class="attraction-card">
+          <div class="attraction-content">
+            <div class="attraction-meta">
+              <span class="attraction-distance">10–14 km</span>
+              <span style="font-size: 12px; color: var(--text-secondary);">Scenic Sights</span>
+            </div>
+            <h3 class="attraction-title">Gap of Dunloe, Torc Waterfall &amp; Ladies View</h3>
+            <p class="attraction-desc">Marvel at Ireland’s most scenic glacial valley, hike the trails of Torc Mountain, and witness the iconic viewpoint named after Queen Victoria's ladies-in-waiting.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 5: RING OF KERRY & DINGLE PENINSULA -->
+        <div class="attraction-card">
+          <div class="attraction-content">
+            <div class="attraction-meta">
+              <span class="attraction-distance">Direct Base</span>
+              <span style="font-size: 12px; color: var(--text-secondary);">Wild Atlantic Way</span>
+            </div>
+            <h3 class="attraction-title">Ring of Kerry &amp; Dingle Driving Tours</h3>
+            <p class="attraction-desc">Crystal Springs is situated right on the Ring of Kerry route, providing the perfect starting and ending point for unforgettable coastal day excursions.</p>
+          </div>
+        </div>
+
+        <!-- ITEM 6: TOWN CENTRE SHOPPING & LIVE MUSIC -->
+        <div class="attraction-card">
+          <div class="attraction-content">
+            <div class="attraction-meta">
+              <span class="attraction-distance">1.0 km (15 min walk)</span>
+              <span style="font-size: 12px; color: var(--text-secondary);">Culture &amp; Dining</span>
+            </div>
+            <h3 class="attraction-title">Town Centre Pubs, Music &amp; Artisan Shopping</h3>
+            <p class="attraction-desc">Stroll into town for lively traditional Irish music sessions, cozy gastropubs, craft boutiques, woollen mills, and Saturday local farmers' markets.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       REVIEWS / TESTIMONIALS SECTION
+       ========================================================================== -->
+  <section id="reviews" class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Guest Experiences</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+      </div>
+
+      <!-- Floating Reviews Carousel Container -->
+      <div class="reviews-carousel-container">
+        <!-- Large decorative background quote mark -->
+        <div class="reviews-quote-mark">&ldquo;</div>
+
+        <div class="reviews-carousel-track">
+          <!-- Review 1 -->
+          <div class="review-slide active">
+            <div class="review-stars">
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <blockquote class="review-text">
+              "The Brosnan family made us feel so welcome from the moment we stepped through the door. Listening to the River Flesk from our bedroom window was heavenly, and the breakfast—especially the Bailey's porridge and smoked salmon—was the best we had in all of Ireland!"
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar">MP</div>
+              <div class="author-info">
+                <span class="author-name">Michael &amp; Patricia Davies</span>
+                <span class="author-details">Superior King Room &bull; September 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-slide">
+            <div class="review-stars">
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <blockquote class="review-text">
+              "Spotless, very spacious room and having secure private parking just a 15-minute walk from Killarney town centre was ideal. Perfect base for exploring the National Park and starting the Ring of Kerry. We will definitely be back!"
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar">LO</div>
+              <div class="author-info">
+                <span class="author-name">Liam &amp; Aoife O’Connor</span>
+                <span class="author-details">Deluxe Double Room &bull; August 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-slide">
+            <div class="review-stars">
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <blockquote class="review-text">
+              "We spent 3 nights on the explorer package. The advice from the Brosnans on itinerary planning for the Gap of Dunloe and Ross Castle saved us hours. Eating our breakfast with views over the flowing river was purely magical."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar">HW</div>
+              <div class="author-info">
+                <span class="author-name">Hans &amp; Greta Weber</span>
+                <span class="author-details">3-Night Explorer Package &bull; July 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Combined Dots & Arrows Controls -->
+        <div class="reviews-controls">
+          <button class="reviews-prev" id="prevReviewBtn" aria-label="Previous testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+
+          <div class="reviews-dots">
+            <button class="review-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button class="review-dot" data-slide="1" aria-label="Go to slide 2"></button>
+            <button class="review-dot" data-slide="2" aria-label="Go to slide 3"></button>
+          </div>
+
+          <button class="reviews-next" id="nextReviewBtn" aria-label="Next testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LOCATION & DIRECTIONS SECTION
+       ========================================================================== -->
+  <section id="location" class="section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">How to Reach Us</span>
+        <h2 class="section-title">Location &amp; Directions</h2>
+        <p style="margin-top: 14px;">Situated 1 km from Killarney town centre on the Woodlawn / Ballycasheen Road, on the banks of the River Flesk.</p>
+      </div>
+
+      <div class="location-wrapper">
+        <!-- Interactive Google Map Embed -->
+        <div class="map-card">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.469039179473!2d-9.490437223593961!3d52.05298267070145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48453c6de47bd67b%3A0xdd82bd0e54b5d50!2sCrystal%20Springs%20B%26B!5e0!3m2!1shu!2ssk!4v1787659221500!5m2!1shu!2sie"
+            title="Crystal Springs B&B Location Map"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Directions & GPS Details -->
+        <div class="directions-card">
+          <!-- GPS Callout -->
+          <div class="gps-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            <div>
+              <strong>GPS Coordinates:</strong> N+52° 3’ 10.47” &nbsp;|&nbsp; W-9° 29’ 15.77”
+            </div>
+          </div>
+
+          <div class="direction-route">
+            <span class="route-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+              From Cork / Waterford (N22)
+            </span>
+            <p class="route-desc">As you approach Killarney on the N22, turn onto the Woodlawn / Ballycasheen Road before reaching the busy town centre.</p>
+          </div>
+
+          <div class="direction-route">
+            <span class="route-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+              From Kenmare &amp; National Park (N71)
+            </span>
+            <p class="route-desc">Follow the scenic N71 through Killarney National Park, connect via Muckross Road, and turn onto Woodlawn Road towards the River Flesk.</p>
+          </div>
+
+          <div class="direction-route">
+            <span class="route-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+              From Kerry Airport (Farranfore) &amp; Train Station
+            </span>
+            <p class="route-desc">Kerry Airport is just 17 km (20 min drive) via the N22. Killarney Train &amp; Bus Station is 1.5 km away (3 minutes by taxi).</p>
+          </div>
+
+          <div style="margin-top: 10px; padding-top: 16px; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 13px; color: var(--text-secondary);">Need turn-by-turn guidance?</span>
+            <a href="tel:+353646633272" class="btn btn-secondary" style="padding: 8px 16px; font-size: 12px;">Call for Directions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DETAILED BOOKING / INQUIRY FORM (NETLIFY + GOOGLE SHEETS)
+       ========================================================================== -->
+  <section id="booking" class="section-padding inquiry-section">
+    <div class="container">
+      <div class="inquiry-container">
+
+        <!-- Form Header -->
+        <div class="text-center" style="margin-bottom: 40px;">
+          <span class="section-subtitle">Direct Reservations</span>
+          <h2 class="section-title" style="font-size: 36px;">Request Your Stay Direct</h2>
+          <p style="margin-top: 10px;">Submit your desired travel dates and room preference below. We guarantee our best direct rates, and the Brosnan family will confirm your booking within 2 hours.</p>
+        </div>
+
+        <!-- Netlify Configured Form -->
+        <form name="detailed-inquiry" method="POST" data-netlify="true" class="inquiry-form-grid">
+          <!-- Netlify identification hidden input -->
+          <input type="hidden" name="form-name" value="detailed-inquiry">
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="inquiry_name">Full Name</label>
+            <div class="input-with-icon">
+              <input type="text" id="inquiry_name" name="full_name" placeholder="e.g. John O'Connor" required>
+              <!-- User Icon SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <div class="form-error-msg">Please enter your full name.</div>
+            </div>
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="inquiry_email">Email Address</label>
+            <div class="input-with-icon">
+              <input type="email" id="inquiry_email" name="client_email" placeholder="e.g. john@example.com" required>
+              <!-- Mail Icon SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div class="form-error-msg">Please enter a valid email address.</div>
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="inquiry_phone">Phone / Mobile Number</label>
+            <div class="input-with-icon">
+              <input type="tel" id="inquiry_phone" name="client_phone" placeholder="+353 87 000 0000" required>
+              <!-- Phone Icon SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <div class="form-error-msg">Please enter your contact phone number.</div>
+            </div>
+          </div>
+
+          <!-- Accommodation/Room Selection -->
+          <div class="form-group">
+            <label for="inquiry_room_type">Selected Room / Package</label>
+            <div class="input-with-icon">
+              <select id="inquiry_room_type" name="room_type" required>
+                <option value="" disabled selected>Choose a Room or Offer...</option>
+                <option value="superior_king">Superior King Room (River View)</option>
+                <option value="deluxe_double">Deluxe Double / Twin Room</option>
+                <option value="family_suite">Family &amp; Triple Suite</option>
+                <option value="special_offer_3night">3-Night Explorer Offer (From €530)</option>
+                <option value="special_offer_2night">2-Night Summer Offer (From €363)</option>
+                <option value="any">Any Available Room</option>
+              </select>
+              <!-- Bed Icon SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h20M22 4v16M2 18h20M10 8v10M14 8v10"></path></svg>
+            </div>
+          </div>
+
+          <!-- Check-in Date -->
+          <div class="form-group">
+            <label for="inquiry_check_in">Check-In Date</label>
+            <div class="input-with-icon">
+              <input type="text" id="inquiry_check_in" name="check_in_date" placeholder="Select Check-in" required>
+              <!-- Calendar Icon SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+          </div>
+
+          <!-- Check-out Date -->
+          <div class="form-group">
+            <label for="inquiry_check_out">Check-Out Date</label>
+            <div class="input-with-icon">
+              <input type="text" id="inquiry_check_out" name="check_out_date" placeholder="Select Check-out" required>
+              <!-- Calendar Icon SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+          </div>
+
+          <!-- Guest Count Selection -->
+          <div class="form-group form-colspan-2">
+            <label for="inquiry_guests">Total Guests (Adults &amp; Children)</label>
+            <div class="input-with-icon">
+              <select id="inquiry_guests" name="guest_count" required>
+                <option value="1">1 Guest (Single Occupancy)</option>
+                <option value="2" selected>2 Guests (Double / Twin)</option>
+                <option value="3">3 Guests (Triple / Family)</option>
+                <option value="4">4 Guests (Family Room)</option>
+                <option value="5+">5+ Guests (Multiple Rooms)</option>
+              </select>
+              <!-- Users Icon SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+          </div>
+
+          <!-- Special Requests Textarea -->
+          <div class="form-group form-colspan-2">
+            <label for="inquiry_requests">Special Requests / Dietary Requirements / Estimated Arrival Time</label>
+            <div class="input-with-icon">
+              <textarea id="inquiry_requests" name="special_requests" placeholder="Please let us know if you require toddler cots, bicycle hire, gluten-free/vegetarian breakfast, or early check-in assistance..."></textarea>
+              <!-- Edit Icon SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-colspan-2">
+            <button type="submit" class="btn btn-primary">Send Direct Booking Request</button>
+            <p style="font-size: 12px; color: var(--text-secondary); text-align: center; margin-top: 10px;">
+              🔒 Direct booking guarantee: No middleman charges, free safe parking, and full breakfast included.
+            </p>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand & Bio -->
+        <div class="footer-col">
+          <div class="footer-brand-wrap">
+            <a href="#" class="footer-logo">
+              <img src="images/logo.png" alt="Crystal Springs B&B" class="footer-logo-img">
+            </a>
+            <div class="footer-brand-text">
+              <span class="footer-main-text">Crystal Springs</span>
+              <span class="footer-sub-text">Killarney Bed &amp; Breakfast</span>
+            </div>
+          </div>
+          <p class="footer-desc">A beautiful, family-run 3-Star Bed &amp; Breakfast set on the banks of the peaceful River Flesk, just minutes away from downtown Killarney and Killarney National Park.</p>
+
+          <!-- Social Icons -->
+          <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.tripadvisor.com" target="_blank" rel="noopener" aria-label="Tripadvisor">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="8" cy="12" r="2.5"></circle><circle cx="16" cy="12" r="2.5"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="#about">About the Brosnans</a>
+            <a href="#rooms">Rooms &amp; Suites</a>
+            <a href="#offers">Special Offers</a>
+            <a href="#breakfast">Breakfast Menu</a>
+            <a href="#amenities">Property Amenities</a>
+            <a href="#gallery">Photo Gallery</a>
+            <a href="#killarney">Explore Killarney</a>
+            <a href="#location">Directions &amp; Map</a>
+            <a href="#booking">Contact &amp; Book</a>
+          </div>
+        </div>
+
+        <!-- Column 3: Direct Benefits -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Direct Booking Perks</h4>
+          <p style="font-size: 13.5px; color: rgba(255,255,255,0.7); line-height: 1.8; margin-bottom: 16px;">
+            ✓ Guaranteed Best Available Rate<br>
+            ✓ Full Gourmet Breakfast Included<br>
+            ✓ Free Safe Off-Street Parking<br>
+            ✓ Free River Flesk Angling Access<br>
+            ✓ No Middleman Booking Fees
+          </p>
+        </div>
+
+        <!-- Column 4: Contact Details -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+
+          <div class="footer-contact-item">
+            <!-- Map Pin SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Crystal Springs B&amp;B,<br>Woodlawn, Ballycasheen Rd,<br>Killarney, Co. Kerry, Ireland</span>
+          </div>
+
+          <div class="footer-contact-item">
+            <!-- Phone SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+353646633272" style="color: inherit;">+353 64 6633 272</a>
+          </div>
+
+          <div class="footer-contact-item">
+            <!-- Mail SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:info@crystalspringsbandb.com" style="color: inherit;">info@crystalspringsbandb.com</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Crystal Springs Bed &amp; Breakfast Killarney. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MOBILE BOTTOM ACTION BAR (MOBILE ONLY - FOR MAXIMUM DIRECT CONVERSIONS)
+       ========================================================================== -->
+  <div class="mobile-action-bar">
+    <!-- Call Us Direct Button -->
+    <a href="tel:+353646633272" class="btn btn-secondary action-btn-call">
+      <!-- Phone SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call Us</span>
+    </a>
+
+    <!-- Direct Booking Scroll Button -->
+    <a href="#booking" class="btn btn-primary action-btn-book">
+      <!-- Calendar SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+      <span>Book Direct</span>
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       SUCCESS MODAL (NATIVE DIALOG)
+       ========================================================================== -->
+  <dialog id="successModal" class="success-dialog" aria-modal="true" aria-labelledby="dialogTitle">
+    <div class="dialog-content">
+      <button class="dialog-close" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      <div class="dialog-icon">
+        <!-- Checkmark SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      </div>
+      <h3 class="dialog-title" id="dialogTitle">Inquiry Received Successfully</h3>
+      <p class="dialog-message">Thank you for choosing Crystal Springs B&amp;B! We have received your booking inquiry and the Brosnan family will contact you shortly with availability and confirmation.</p>
+      <p class="dialog-message" style="font-size: 14px; color: var(--primary-color); margin-top: 12px; font-style: italic;">
+        <strong>Direct Booking Note:</strong> If your stay is within the next 24 hours, feel free to call us directly at <strong>+353 64 6633 272</strong> for immediate assistance.
+      </p>
+      <button class="btn btn-primary dialog-btn" id="modalOkBtn">Close Window</button>
+    </div>
+  </dialog>
+
+  <!-- ==========================================================================
+       SCRIPTS (CDN & Custom JS)
+       ========================================================================== -->
+  <!-- Flatpickr Datepicker library JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <!-- Custom Javascript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
