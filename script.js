@@ -125,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroCheckInPicker = flatpickr("#hero_check_in", {
     dateFormat: "Y-m-d",
     minDate: "today",
+    disableMobile: true,
     onChange: function(selectedDates, dateStr) {
       if (selectedDates.length > 0) {
         const checkInDate = selectedDates[0];
@@ -149,7 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   heroCheckOutPicker = flatpickr("#hero_check_out", {
     dateFormat: "Y-m-d",
-    minDate: formatDate(addDays(new Date(), 1)) // Default to tomorrow minDate
+    minDate: formatDate(addDays(new Date(), 1)), // Default to tomorrow minDate
+    disableMobile: true
   });
 
   /* --- B. DETAILED INQUIRY FORM DATEPICKERS --- */
@@ -158,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const inquiryCheckInPicker = flatpickr("#inquiry_check_in", {
     dateFormat: "Y-m-d",
     minDate: "today",
+    disableMobile: true,
     onChange: function(selectedDates, dateStr) {
       if (selectedDates.length > 0) {
         const checkInDate = selectedDates[0];
@@ -181,7 +184,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   inquiryCheckOutPicker = flatpickr("#inquiry_check_out", {
     dateFormat: "Y-m-d",
-    minDate: formatDate(addDays(new Date(), 1)) // Default to tomorrow minDate
+    minDate: formatDate(addDays(new Date(), 1)), // Default to tomorrow minDate
+    disableMobile: true
   });
 
   // --------------------------------------------------------------------------

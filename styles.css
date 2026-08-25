@@ -1500,6 +1500,24 @@ span.flatpickr-weekday {
   cursor: not-allowed !important;
 }
 
+/* Mobile responsive adjustments for Flatpickr */
+@media (max-width: 480px) {
+  .flatpickr-calendar {
+    width: 290px !important;
+    font-size: 13px !important;
+  }
+  .flatpickr-days, .dayContainer {
+    width: 290px !important;
+    min-width: 290px !important;
+    max-width: 290px !important;
+  }
+  .flatpickr-day {
+    height: 38px !important;
+    line-height: 38px !important;
+    max-width: 38px !important;
+  }
+}
+
 /* --------------------------------------------------------------------------
    13. SUCCESS DIALOG / MODAL (NATIVE <dialog>)
    -------------------------------------------------------------------------- */
@@ -1828,32 +1846,32 @@ span.flatpickr-weekday {
   width: 100%;
   background-color: var(--bg-card);
   border-top: 1px solid var(--border-color);
-  box-shadow: 0 -4px 30px rgba(26, 29, 26, 0.05);
-  padding: 14px 16px calc(14px + env(safe-area-inset-bottom, 12px)) 16px; /* Added safe-area-inset-bottom with fallback to prevent cutoff */
-  z-index: 999; /* Positioned below modal dialog backdrop but above page content */
-  gap: 12px;
+  box-shadow: 0 -4px 20px rgba(26, 29, 26, 0.08);
+  padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px)) 12px;
+  z-index: 999;
+  gap: 10px;
 }
 
 .mobile-action-bar .btn {
   flex: 1;
-  height: 48px;
+  height: 42px;
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  padding: 0;
+  letter-spacing: 0.06em;
+  padding: 0 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   text-transform: uppercase;
   border-radius: var(--border-radius);
   transition: var(--transition-fast);
 }
 
 .mobile-action-bar .btn svg {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 
 /* Left button: Outline/Secondary style (similar to WhatsApp in reference) */
@@ -1888,7 +1906,7 @@ span.flatpickr-weekday {
   
   /* Add padding-bottom to the body to prevent the action bar from overlapping footer content */
   body {
-    padding-bottom: calc(76px + env(safe-area-inset-bottom, 12px)) !important;
+    padding-bottom: calc(58px + env(safe-area-inset-bottom, 0px)) !important;
   }
 }
 
